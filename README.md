@@ -68,23 +68,33 @@ Auxiliary images for the validation and test sets should be placed under the cor
 The textual annotation files should contain samples beginning with an identifier line such as:
 
 ```text
-IMGID:1093
+IMGID:3
 Tomato	B-Crop
 leaves	I-Crop
 suffering	O
 from	O
 tomato	B-Disease
-early	I-Disease
-blight	I-Disease
+powdery 	I-Disease
+mildew	I-Disease
 have	O
-small	B-Feature
-black	I-Feature
-elliptical	I-Feature
+scattered	B-Feature
+radiating	I-Feature
+white	I-Feature
+mold	I-Feature
 spots	I-Feature
-at	B-Position
+on	B-Position
+the	I-Position
+front	I-Position
+of	I-Position
 the	I-Position
 leaf	I-Position
-tips	I-Position
+,	O
+yellow	B-Feature
+pale-yellow	I-Feature
+patch	I-Feature
+on	B-Position
+the	I-Position
+veins	B-Position
 ```
 
 ## Sample-Identifier Format
