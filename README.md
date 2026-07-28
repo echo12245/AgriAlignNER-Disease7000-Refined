@@ -16,7 +16,6 @@ Researchers who obtain the original dataset through the authorized channel can u
 AgriAlignNER-Reproducibility/
 ├── README.md
 ├── reconstruct_refined_dataset.py
-├── .gitignore
 │
 ├── manifests/
 │   └── retained_sample_ids.txt
