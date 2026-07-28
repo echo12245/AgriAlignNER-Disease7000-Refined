@@ -13,7 +13,7 @@ Researchers who obtain the original dataset through the authorized channel can u
 ## Repository Contents
 
 ```
-AgriAlignNER-Reproducibility/
+AgriAlignNER-Disease7000-Refined/
 ├── README.md
 ├── reconstruct_refined_dataset.py
 │
