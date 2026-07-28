@@ -12,7 +12,7 @@ Researchers who obtain the original dataset through the authorized channel can u
 
 ## Repository Contents
 
-```text
+```
 AgriAlignNER-Reproducibility/
 ├── README.md
 ├── reconstruct_refined_dataset.py
@@ -111,7 +111,6 @@ The same identifier is used to ensure that all modalities belonging to one sampl
 
 The reconstruction script requires Python 3.8 or later and uses only Python standard-library modules.
 
-No additional Python packages are required.
 
 ## Reconstruction
 
