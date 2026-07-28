@@ -127,11 +127,6 @@ If the output directory already exists and should be replaced, run:
 python reconstruct_refined_dataset.py --overwrite
 ```
 
-If BIO-sequence validation needs to be skipped because of dataset-specific label conventions, run:
-
-```bash
-python reconstruct_refined_dataset.py --overwrite --skip-bio-check
-```
 
 ## Generated Files
 
