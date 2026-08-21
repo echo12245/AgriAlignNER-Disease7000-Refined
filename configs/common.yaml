@@ -1,0 +1,27 @@
+datasets:
+
+  Disease7000-Refined:
+    split:
+      train: 5038
+      validation: 629
+      test: 631
+
+
+  Twitter2017:
+    split:
+      train: 3373
+      validation: 723
+      test: 723
+
+
+evaluation:
+  metrics:
+    - Precision
+    - Recall
+    - F1
+  runs: 5
+
+
+environment:
+  framework: PyTorch 2.5.1
+  cuda: 12.3
