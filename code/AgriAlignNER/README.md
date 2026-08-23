@@ -98,7 +98,7 @@ python run_agriAlign.py \
 --save_path ./checkpoints
 ```
 
-#### Training on twitter2017
+#### Training on Twitter2017
 ```bash
 python run_agriAlign.py \
 --dataset_name Twitter2017 \
@@ -128,7 +128,7 @@ python run_agriAlign.py \
 --batch_size 32
 ```
 
-#### Testing on twitter2017
+#### Testing on Twitter2017
 ```bash
 python run_agriAlign.py \
 --dataset_name Twitter2017 \
