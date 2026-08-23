@@ -1,7 +1,7 @@
 model: HVPNeT
 
 architecture:
-  text_encoder: BERT-base-uncased
+  text_encoder: BERT-base-cased
   visual_encoder: CNN-based image encoder
   fusion_module: Prompt-based multimodal fusion
   decoder: NER classifier
