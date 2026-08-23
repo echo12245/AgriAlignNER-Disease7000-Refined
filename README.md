@@ -14,6 +14,23 @@ Researchers who obtain the original dataset through the authorized channel can u
 
 ```
 AgriAlignNER-Disease7000-Refined/
+├── code
+├── configs
+│   └── baselines
+│       └── AMLR.yaml
+│       └── AgriFuseNER.yaml
+│       └── BERT-CRF.yaml
+│       └── BERT.yaml
+│       └── BiLSTM-CRF.yaml
+│       └── HVPNeT.yaml
+│       └── MAF.yaml
+│       └── RSRNeT.yaml
+│       └── UMGF.yaml
+│       └── UMT.yaml
+│       └── VEC-MNER.yaml
+│   └── our_model
+│       └── AgriAlignNER.yaml
+│   └── common.yaml
 ├── README.md
 ├── reconstruct_refined_dataset.py
 │
