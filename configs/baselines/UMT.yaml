@@ -1,0 +1,29 @@
+model: UMT
+
+architecture:
+  backbone: BERT-base-cased
+  fusion_module: MTCCMBert
+  decoder: CRF
+
+training:
+  optimizer: AdamW
+  learning_rate: 3e-6
+  batch_size: 32
+  epochs: 60
+  seeds:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+
+input:
+  max_seq_length: 256
+
+loss:
+  type: CRF loss
+
+multimodal:
+  layer_num1: 1
+  layer_num2: 1
+  layer_num3: 1
