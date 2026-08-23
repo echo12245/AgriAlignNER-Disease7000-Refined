@@ -1,0 +1,36 @@
+model: HVPNeT
+
+architecture:
+  text_encoder: BERT-base-uncased
+  visual_encoder: CNN-based image encoder
+  fusion_module: Prompt-based multimodal fusion
+  decoder: NER classifier
+
+training:
+  optimizer: AdamW
+
+  learning_rate: 3e-6
+
+  batch_size: 32
+  epochs: 60
+
+  seed:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+
+
+loss:
+  type: token classification loss
+
+
+input:
+  max_seq_length: 256
+
+
+prompt:
+  use_prompt: true
+  prompt_len: 10
+  prompt_dim: 800
