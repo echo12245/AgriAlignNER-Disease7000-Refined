@@ -1,0 +1,34 @@
+model: AMLR
+
+architecture:
+  text_encoder: BERT-base-uncased
+  visual_encoder: CNN-based image encoder
+  decoder: CRF
+
+
+training:
+  optimizer: Adam
+
+  learning_rate: 3e-6
+
+  batch_size: 32
+
+  epochs: 60
+
+  seeds:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+
+
+loss:
+  type: CRF-based span NER objective
+
+
+input:
+  max_seq_length: 256
+
+model_specific:
+  multi_head_num: 8
