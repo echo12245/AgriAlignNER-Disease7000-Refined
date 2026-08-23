@@ -1,0 +1,33 @@
+model: VEC-MNER
+
+architecture:
+  text_encoder: BERT-base-cased
+  visual_encoder: ViT-B/32
+  decoder: CRF
+
+training:
+  optimizer: AdamW
+
+  learning_rate:
+    backbone: 3e-6
+    crf: 5e-2
+
+  batch_size: 32
+  epochs: 60
+
+  seeds:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+
+loss:
+  type: CRF negative log-likelihood
+
+input:
+  max_seq_length: 256
+
+optimization:
+  weight_decay: 1e-3
+  warmup_ratio: 0.05
