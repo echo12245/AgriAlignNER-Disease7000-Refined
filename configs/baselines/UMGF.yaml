@@ -14,7 +14,7 @@ training:
   batch_size: 32
   epochs: 60
 
-  seed:
+  seeds:
     - 2021
     - 2022
     - 2023
