@@ -9,7 +9,6 @@ text_encoder:
 
 visual_encoder:
   backbone: ResNet152
-  pretrained: true
 
   features:
     global: true
@@ -21,7 +20,6 @@ cross_modal_alignment:
 
   entity_level:
     name: EDGA
-    full_name: Entity-level Dynamic Gated Alignment
 
     text_projection: true
     visual_projection: true
@@ -30,8 +28,6 @@ cross_modal_alignment:
 
   token_level:
     name: AMGCA
-    full_name: Adaptive Multi-Granularity Cross-modal Attention
-
     multi_head_attention: true
 
 
@@ -69,13 +65,9 @@ training:
 
 loss:
 
-  ner_loss:
-    name: CrossEntropy
+  ner_loss
 
-
-  boundary_loss:
-    enabled: true
-
+  boundary_loss
 
   contrastive_loss:
 
