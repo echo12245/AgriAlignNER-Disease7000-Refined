@@ -1,0 +1,59 @@
+model:
+  name: AgriFuseNER
+
+
+architecture:
+
+  text_encoder:
+    backbone: 
+    hidden_size: 768
+
+
+  visual_encoder:
+    backbone: ViT
+
+
+  sequence_encoder:
+    type: BiLSTM
+
+  decoder:
+    type: CRF
+
+
+training:
+
+  optimizer: Adam
+
+  learning_rate: 3e-6
+
+  batch_size: 32
+
+  epochs: 60
+
+  dropout: 0.1
+
+
+
+input:
+
+  max_seq_length: 256
+
+
+visual:
+
+  roi_features:
+    enabled: true
+
+  top_k_regions: 3
+
+loss:
+
+  lambda_paper: 0.1
+
+  seeds:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+  
