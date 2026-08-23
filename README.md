@@ -15,6 +15,17 @@ Researchers who obtain the original dataset through the authorized channel can u
 ```
 AgriAlignNER-Disease7000-Refined/
 ├── code
+│   └── AgriAlignNER
+│       └── models
+│           └── _init_.py
+│           └── agri_align_model.py
+│       └── modules
+│           └── agri_align_trainer.py
+│       └── utils
+│           └── encoder.py
+│       └── README.md
+│       └── requirements.txt
+│       └── run_agriAlign.py
 ├── configs
 │   └── baselines
 │       └── AMLR.yaml
