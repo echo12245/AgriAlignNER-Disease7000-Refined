@@ -1,0 +1,38 @@
+model:
+  name: RSRNeT
+
+
+architecture:
+
+  text_encoder:
+    backbone: BERT-base-cased
+
+
+  visual_encoder:
+    backbone: CNN-based visual encoder
+
+
+  decoder:
+    type: NER classifier
+
+
+training:
+
+  optimizer: AdamW
+
+  learning_rate: 3e-6
+
+  batch_size: 32
+
+  epochs: 60
+
+  warmup_ratio: 0.05
+
+  seeds:
+     - 2021
+     - 2022
+     - 2023
+     - 2024
+     - 2025
+    
+  max_seq_length: 256
