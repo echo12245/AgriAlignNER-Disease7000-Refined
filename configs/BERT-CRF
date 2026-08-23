@@ -1,0 +1,33 @@
+model: BERT-CRF
+
+architecture:
+  backbone: BERT
+  decoder: CRF
+
+training:
+  optimizer: AdamW
+
+  learning_rate:
+    bert: 5e-5
+    crf: 5e-5
+
+  batch_size: 32
+  epochs: 60
+
+  seeds:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+
+loss:
+  type: CRF negative log-likelihood
+
+input:
+  train_max_seq_length: 256
+  eval_max_seq_length: 256
+
+optimization:
+  weight_decay: 0.01
+  warmup_proportion: 0.05
