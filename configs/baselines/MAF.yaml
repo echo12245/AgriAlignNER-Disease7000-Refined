@@ -1,0 +1,39 @@
+model: MAF
+
+architecture:
+  text_encoder: BERT-base-cased
+  visual_encoder: ResNet-152
+  decoder: CRF
+
+training:
+  optimizer: BertAdam
+
+  learning_rate: 3e-6
+
+  batch_size: 32
+  epochs: 60
+
+  seeds:
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+
+loss:
+  type: CRF negative log-likelihood
+
+input:
+  max_seq_length: 256
+
+visual:
+  crop_size: 224
+
+multimodal:
+  layer_num1: 1
+  layer_num2: 1
+  layer_num3: 1
+
+optimization:
+  weight_decay: 0.01
+  warmup_proportion: 0.05
