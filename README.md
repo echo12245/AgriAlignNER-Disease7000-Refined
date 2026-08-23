@@ -14,44 +14,55 @@ Researchers who obtain the original dataset through the authorized channel can u
 
 ```
 AgriAlignNER-Disease7000-Refined/
-├── code
-│   └── AgriAlignNER
-│       └── models
-│           └── _init_.py
-│           └── agri_align_model.py
-│       └── modules
-│           └── agri_align_trainer.py
-│       └── utils
-│           └── encoder.py
+│
+├── code/
+│   └── AgriAlignNER/
+│       │
+│       ├── models/
+│       │   ├── __init__.py
+│       │   └── agri_align_model.py
+│       │
+│       ├── modules/
+│       │   └── agri_align_trainer.py
+│       │
+│       ├── utils/
+│       │   └── encoder.py
+│       │
+│       ├── run_agriAlign.py
+│       ├── requirements.txt
 │       └── README.md
-│       └── requirements.txt
-│       └── run_agriAlign.py
-├── configs
-│   └── baselines
-│       └── AMLR.yaml
-│       └── AgriFuseNER.yaml
-│       └── BERT-CRF.yaml
-│       └── BERT.yaml
-│       └── BiLSTM-CRF.yaml
-│       └── HVPNeT.yaml
-│       └── MAF.yaml
-│       └── RSRNeT.yaml
-│       └── UMGF.yaml
-│       └── UMT.yaml
+│
+├── configs/
+│   │
+│   ├── common.yaml
+│   │
+│   ├── our_model/
+│   │   └── AgriAlignNER.yaml
+│   │
+│   └── baselines/
+│       ├── AMLR.yaml
+│       ├── AgriFuseNER.yaml
+│       ├── BERT.yaml
+│       ├── BERT-CRF.yaml
+│       ├── BiLSTM-CRF.yaml
+│       ├── HVPNeT.yaml
+│       ├── MAF.yaml
+│       ├── RSRNeT.yaml
+│       ├── UMGF.yaml
+│       ├── UMT.yaml
 │       └── VEC-MNER.yaml
-│   └── our_model
-│       └── AgriAlignNER.yaml
-│   └── common.yaml
-├── README.md
+│
 ├── reconstruct_refined_dataset.py
 │
 ├── manifests/
 │   └── retained_sample_ids.txt
 │
-└── splits/
-    ├── train_ids.txt
-    ├── valid_ids.txt
-    └── test_ids.txt
+├── splits/
+│   ├── train_ids.txt
+│   ├── valid_ids.txt
+│   └── test_ids.txt
+│
+└── README.md
 ```
 
 The released files include:
