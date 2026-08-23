@@ -11,6 +11,8 @@ The raw images, texts, and annotations used to construct Disease7000-Refined ori
 Researchers who obtain the original dataset through the authorized channel can use the released sample identifiers, fixed split files, and reconstruction script to reproduce the exact dataset version used in this study.
 
 ## Repository Contents
+The repository contains the source code, configuration files, and reproducibility
+resources for AgriAlignNER.
 
 ```
 AgriAlignNER-Disease7000-Refined/
@@ -65,13 +67,16 @@ AgriAlignNER-Disease7000-Refined/
 └── README.md
 ```
 
+
 The released files include:
 
-* `reconstruct_refined_dataset.py`: validates the released sample identifiers and reconstructs the fixed multimodal data splits from an authorized local copy of the original dataset.
-* `manifests/retained_sample_ids.txt`: contains the identifiers of all 6,298 samples retained after data cleaning.
-* `splits/train_ids.txt`: contains the 5,038 training-sample identifiers.
-* `splits/valid_ids.txt`: contains the 629 validation-sample identifiers.
-* `splits/test_ids.txt`: contains the 631 test-sample identifiers.
+- `code/AgriAlignNER/`: implementation of the AgriAlignNER model, training pipeline, and utility functions.
+- `configs/`: training configurations for AgriAlignNER and compared baseline models.
+- `reconstruct_refined_dataset.py`: reconstructs the fixed Disease7000-Refined dataset version from an authorized copy of the original dataset.
+- `manifests/retained_sample_ids.txt`: contains identifiers of all 6,298 retained samples.
+- `splits/train_ids.txt`: contains 5,038 training sample identifiers.
+- `splits/valid_ids.txt`: contains 629 validation sample identifiers.
+- `splits/test_ids.txt`: contains 631 test sample identifiers.
 
 The three fixed splits are mutually exclusive, and their union is identical to the set of retained sample identifiers.
 
