@@ -1,0 +1,33 @@
+model: BiLSTM-CRF
+
+architecture:
+  embedding: word embedding
+  encoder: BiLSTM
+  decoder: CRF
+
+training:
+  optimizer: Adam
+
+
+  batch_size: 32
+  epochs: 60
+
+  seeds:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+
+loss:
+  type: CRF negative log-likelihood
+
+input:
+  max_seq_length: 256
+
+model_parameters:
+  embedding_dim: 300
+  hidden_size: 256
+  num_layers: 1
+  bidirectional: true
+  dropout: 0.1
