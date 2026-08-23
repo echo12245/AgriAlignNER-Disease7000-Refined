@@ -1,0 +1,31 @@
+model: UMGF
+
+architecture:
+  text_encoder: BERT-base-cased
+  visual_encoder: ResNet-152
+  fusion_module: Text-Image Gated Fusion
+  decoder: CRF
+
+training:
+  optimizer: Adam
+
+  learning_rate: 3e-6
+
+  batch_size: 32
+  epochs: 60
+
+  seed:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
+
+loss:
+  type: CRF negative log-likelihood
+
+input:
+  max_seq_length: 256
+
+visual:
+  image_size: 224
