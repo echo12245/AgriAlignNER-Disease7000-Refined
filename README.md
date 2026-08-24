@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/1313682429.svg)](https://doi.org/10.5281/zenodo.22076040)
 # AgriAlignNER-Disease7000-Refined
 Reproducibility resources for Disease7000-Refined, including data-cleaning and reconstruction scripts, identifiers of 6,298 retained samples, and fixed train/validation/test split files.
 
