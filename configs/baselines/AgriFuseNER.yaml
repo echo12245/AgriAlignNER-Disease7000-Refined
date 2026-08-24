@@ -28,7 +28,7 @@ training:
 
   batch_size: 32
 
-  epochs: 60
+  epochs: 120
 
   dropout: 0.1
 
