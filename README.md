@@ -3,7 +3,7 @@
 Reproducibility resources for Disease7000-Refined, including data-cleaning and reconstruction scripts, identifiers of 6,298 retained samples, and fixed train/validation/test split files.
 
 
-# AgriAlignNER Reproducibility Package
+## Overview
 
 This repository provides the reproducibility materials associated with the AgriAlignNER study and the Disease7000-Refined dataset.
 
@@ -12,39 +12,61 @@ The raw images, texts, and annotations used to construct Disease7000-Refined ori
 Researchers who obtain the original dataset through the authorized channel can use the released sample identifiers, fixed split files, and reconstruction script to reproduce the exact dataset version used in this study.
 
 ## Repository Contents
-The repository contains the source code, configuration files, and reproducibility
-resources for AgriAlignNER.
+The repository contains the source code, configuration files, and reproducibility resources for AgriAlignNER, together with the author reimplementation of AgriFuseNER* used for the controlled comparison.
 
 ```
 AgriAlignNER-Disease7000-Refined/
 │
 ├── code/
-│   └── AgriAlignNER/
-│       │
-│       ├── models/
-│       │   ├── __init__.py
-│       │   └── agri_align_model.py
-│       │
-│       ├── modules/
-│       │   └── agri_align_trainer.py
-│       │
-│       ├── utils/
-│       │   └── encoder.py
-│       │
-│       ├── run_agriAlign.py
-│       ├── requirements.txt
-│       └── README.md
+│   ├── AgriAlignNER/
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   └── agri_align_model.py
+│   │   │
+│   │   ├── modules/
+│   │   │   ├── __init__.py
+│   │   │   └── agri_align_trainer.py
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── __init__.py
+│   │   │   └── encoder.py
+│   │   │
+│   │   ├── README.md
+│   │   ├── requirements.txt
+│   │   └── run_agriAlign.py
+│   │
+│   └── baselines/
+│       └── AgriFuseNER/
+│           ├── models/
+│           │   ├── __init__.py
+│           │   └── agrifusener.py
+│           │
+│           ├── modules/
+│           │   ├── __init__.py
+│           │   └── crf.py
+│           │
+│           ├── processor/
+│           │   ├── __init__.py
+│           │   └── dataset.py
+│           │
+│           ├── utils/
+│           │   ├── __init__.py
+│           │   ├── evaluate.py
+│           │   └── visual.py
+│           │
+│           ├── README.md
+│           ├── requirements.txt
+│           └── run_agrifusener.py
 │
 ├── configs/
-│   │
 │   ├── common.yaml
 │   │
 │   ├── our_model/
 │   │   └── AgriAlignNER.yaml
 │   │
 │   └── baselines/
-│       ├── AMLR.yaml
 │       ├── AgriFuseNER.yaml
+│       ├── AMLR.yaml
 │       ├── BERT.yaml
 │       ├── BERT-CRF.yaml
 │       ├── BiLSTM-CRF.yaml
@@ -55,8 +77,6 @@ AgriAlignNER-Disease7000-Refined/
 │       ├── UMT.yaml
 │       └── VEC-MNER.yaml
 │
-├── reconstruct_refined_dataset.py
-│
 ├── manifests/
 │   └── retained_sample_ids.txt
 │
@@ -65,13 +85,15 @@ AgriAlignNER-Disease7000-Refined/
 │   ├── valid_ids.txt
 │   └── test_ids.txt
 │
-└── README.md
+├── LICENSE
+├── README.md
+└── reconstruct_refined_dataset.py
 ```
-
 
 The released files include:
 
 - `code/AgriAlignNER/`: implementation of the AgriAlignNER model, training pipeline, and utility functions.
+- `code/baselines/AgriFuseNER/`: author reimplementation of AgriFuseNER* used for the controlled comparison in the revised manuscript. This is not the official implementation released by the original AgriFuseNER authors.
 - `configs/`: training configurations for AgriAlignNER and compared baseline models.
 - `reconstruct_refined_dataset.py`: reconstructs the fixed Disease7000-Refined dataset version from an authorized copy of the original dataset.
 - `manifests/retained_sample_ids.txt`: contains identifiers of all 6,298 retained samples.
