@@ -1,7 +1,7 @@
 model: UMGF
 
 architecture:
-  text_encoder: BERT-base-cased
+  text_encoder: bert-base-uncased
   visual_encoder: ResNet-152
   fusion_module: Text-Image Gated Fusion
   decoder: CRF
