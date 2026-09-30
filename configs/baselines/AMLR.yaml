@@ -1,7 +1,7 @@
 model: AMLR
 
 architecture:
-  text_encoder: BERT-base-uncased
+  text_encoder: bert-base-uncased
   visual_encoder: CNN-based image encoder
   decoder: CRF
 
