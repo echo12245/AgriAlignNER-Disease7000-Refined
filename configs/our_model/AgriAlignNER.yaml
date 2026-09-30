@@ -3,7 +3,7 @@ model:
 
 
 text_encoder:
-  backbone: BERT
+  backbone: bert-base-uncased
   hidden_size: 768
 
 
@@ -54,7 +54,7 @@ training:
 
   optimizer: AdamW
 
-  learning_rate:3e-6
+  learning_rate: 3e-6
 
   warmup_ratio: 0.05
 
@@ -65,15 +65,21 @@ training:
 
 loss:
 
-  ner_loss
+  ner_loss:
 
-  boundary_loss
+    weight: 1.0
+
+  boundary_loss:
+
+    weight: 0.3
 
   contrastive_loss:
 
     name: InfoNCE
 
     temperature: 0.07
+
+    weight: 0.05
 
 
 experiment:
