@@ -5,7 +5,7 @@ model:
 architecture:
 
   text_encoder:
-    backbone: BERT-base-cased
+    backbone: bert-base-uncased
 
 
   visual_encoder:
