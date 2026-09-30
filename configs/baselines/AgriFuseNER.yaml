@@ -5,12 +5,12 @@ model:
 architecture:
 
   text_encoder:
-    backbone: 
+    backbone: bert-base-uncased
     hidden_size: 768
 
 
   visual_encoder:
-    backbone: ViT
+    backbone: google/vit-base-patch16-224
 
 
   sequence_encoder:
@@ -18,6 +18,12 @@ architecture:
 
   decoder:
     type: CRF
+
+
+boundary_modeling:
+
+  auxiliary_boundary_scheme: B-M
+  auxiliary_labels: 2
 
 
 training:
@@ -50,10 +56,13 @@ loss:
 
   lambda_paper: 0.1
 
+
+experiment:
+
   seeds:
     - 2021
     - 2022
     - 2023
     - 2024
     - 2025
-  
+
