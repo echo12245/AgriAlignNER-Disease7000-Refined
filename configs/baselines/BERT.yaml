@@ -1,7 +1,7 @@
 model: BERT
 
 architecture:
-  backbone: BERT
+  backbone: bert-base-uncased
   decoder: Token-level classifier
 
 training:
