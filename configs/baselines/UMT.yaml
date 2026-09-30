@@ -1,7 +1,7 @@
 model: UMT
 
 architecture:
-  backbone: BERT-base-cased
+  backbone: bert-base-uncased
   fusion_module: MTCCMBert
   decoder: CRF
 
