@@ -3,7 +3,7 @@ model:
 
 
 text_encoder:
-  backbone: bert-base-uncased
+  backbone: bert-base-cased
   hidden_size: 768
 
 
