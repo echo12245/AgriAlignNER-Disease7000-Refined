@@ -2,7 +2,7 @@ from __future__ import annotations
 import math
 import torch
 from torch import nn
-from modules.crf import LinearChainCRF
+from ..modules.crf import LinearChainCRF
 B_ID = 0
 M_ID = 1
 def bio_ids_to_bm(label_ids: torch.Tensor, id2label: dict[int, str]) -> torch.Tensor:
