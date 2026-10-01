@@ -11,6 +11,10 @@ To run the code, you need to install the requirements:
 pip install -r requirements.txt
 ```
 
+## Project Setup
+
+For PyCharm users, please mark the AgriAlignNER directory as Sources Root to enable correct IDE resolution of the internal packages.
+
 ## Pretrained Models
 
 ### BERT Text Encoder
