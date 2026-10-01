@@ -139,11 +139,11 @@ If the pretrained ViT model is not already cached, it will be automatically down
 
 ```bash
 python run_agrifusener.py \
-  --mode train \
-  --lambda-paper 0.1 \
-  --grouping-source-train predicted \
-  --seed 2021 \
-  --out outputs/agrifusener_seed2021
+--mode train \
+--lambda-paper 0.1 \
+--grouping-source-train predicted \
+--seed 2021 \
+--out outputs/agrifusener_seed2021
 ```
 
 The best checkpoint is selected according to validation F1 and saved as:
@@ -157,12 +157,12 @@ outputs/agrifusener_seed2021/best.pt
 #### Testing on Disease7000-Refined
 ```bash
 python run_agrifusener.py \
-  --mode test \
-  --checkpoint outputs/agrifusener_seed2021/best.pt \
-  --lambda-paper 0.1 \
-  --grouping-source-train predicted \
-  --seed 2021 \
-  --out outputs/agrifusener_seed2021_test
+--mode test \
+--checkpoint outputs/agrifusener_seed2021/best.pt \
+--lambda-paper 0.1 \
+--grouping-source-train predicted \
+--seed 2021 \
+--out outputs/agrifusener_seed2021_test
 ```
 
 ## Notes on Reproducibility
