@@ -1,1 +1,67 @@
+model:
+  name: AgriFuseNER*
 
+
+architecture:
+
+  text_encoder:
+    backbone: bert-base-cased
+    hidden_size: 768
+
+
+  visual_encoder:
+    backbone: google/vit-base-patch16-224
+
+
+  sequence_encoder:
+    type: BiLSTM
+
+  decoder:
+    type: CRF
+
+
+boundary_modeling:
+
+  auxiliary_boundary_scheme: B-M
+  auxiliary_labels: 2
+
+
+training:
+
+  optimizer: Adam
+
+  learning_rate: 3e-6
+
+  batch_size: 32
+
+  epochs: 120
+
+  dropout: 0.1
+
+
+
+input:
+
+  max_seq_length: 256
+
+
+visual:
+
+  roi_features:
+    enabled: true
+
+  top_k_regions: 3
+
+loss:
+
+  lambda_paper: 0.1
+
+
+experiment:
+
+  seeds:
+    - 2021
+    - 2022
+    - 2023
+    - 2024
+    - 2025
