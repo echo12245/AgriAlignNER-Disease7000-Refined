@@ -109,6 +109,8 @@ AgriAlignNER
 
 ## Run
 
+All commands below should be executed from the `AgriAlignNER/` directory.
+
 ### Training
 
 #### Training on Disease7000-Refined
