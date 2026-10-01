@@ -1,7 +1,7 @@
 model: BERT-CRF
 
 architecture:
-  backbone: bert-base-uncased
+  backbone: BERT
   decoder: CRF
 
 training:
