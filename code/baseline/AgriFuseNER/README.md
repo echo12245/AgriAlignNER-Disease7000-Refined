@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ### BERT Text Encoder
 
-The textual encoder is initialized with `bert-base-uncased` using the Hugging Face Transformers library.
+The textual encoder is initialized with `bert-base-cased` using the Hugging Face Transformers library.
 
 The pretrained BERT model and tokenizer are automatically downloaded and cached on first use. Therefore, no manually downloaded local BERT checkpoint is required.
 
