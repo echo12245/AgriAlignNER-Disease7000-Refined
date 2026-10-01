@@ -39,7 +39,7 @@ Due to the original data usage agreement, the raw images, texts, and annotations
 
 The dataset directory should be organized as follows:
 ```
-AgriFuseNER
+AgriFuseNER*
  |-- data
  |    |-- Disease7000-Refined
  |    |    |-- train.txt
