@@ -1,5 +1,5 @@
 # AgriAlignNER-Disease7000-Refined
-Reproducibility resources for Disease7000-Refined, including data-cleaning and reconstruction scripts, identifiers of 6,298 retained samples, and fixed train/validation/test split files.
+Reproducibility resources for AgriAlignNER, including model code, the AgriFuseNER reimplementation, baseline configurations, Disease7000-Refined reconstruction scripts, retained-sample identifiers, and fixed train/validation/test splits.
 
 
 ## Overview
