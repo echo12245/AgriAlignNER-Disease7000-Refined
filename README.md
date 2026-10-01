@@ -12,7 +12,7 @@ The raw images, texts, and annotations used to construct Disease7000-Refined ori
 Researchers who obtain the original dataset through the authorized channel can use the released sample identifiers, fixed split files, and reconstruction script to reproduce the exact dataset version used in this study.
 
 ## Repository Contents
-The repository contains the source code, configuration files, and reproducibility resources for AgriAlignNER, together with the author reimplementation of AgriFuseNER* used for the controlled comparison.
+The repository contains the source code, configuration files, and reproducibility resources for AgriAlignNER, together with the author reimplementation of AgriFuseNER used for the controlled comparison.
 
 ```
 AgriAlignNER-Disease7000-Refined/
