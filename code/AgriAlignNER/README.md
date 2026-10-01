@@ -116,7 +116,7 @@ AgriAlignNER
 ```bash
 python run_agriAlign.py \
 --dataset_name Disease7000-Refined \
---bert_name bert-base-uncased \
+--bert_name bert-base-cased \
 --use_prompt \
 --use_amgca \
 --do_train \
@@ -132,7 +132,7 @@ python run_agriAlign.py \
 ```bash
 python run_agriAlign.py \
 --dataset_name Twitter2017 \
---bert_name bert-base-uncased \
+--bert_name bert-base-cased \
 --use_prompt \
 --use_amgca \
 --do_train \
@@ -150,7 +150,7 @@ python run_agriAlign.py \
 ```bash
 python run_agriAlign.py \
 --dataset_name Disease7000-Refined \
---bert_name bert-base-uncased \
+--bert_name bert-base-cased \
 --use_prompt \
 --use_amgca \
 --only_test \
@@ -162,7 +162,7 @@ python run_agriAlign.py \
 ```bash
 python run_agriAlign.py \
 --dataset_name Twitter2017 \
---bert_name bert-base-uncased \
+--bert_name bert-base-cased \
 --use_prompt \
 --use_amgca \
 --only_test \
