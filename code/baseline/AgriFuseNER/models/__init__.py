@@ -1,1 +1,1 @@
-from .agrifusener import AgriFuseNER16Approx
+from .agrifusener import AgriFuseNERApprox
