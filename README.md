@@ -93,7 +93,7 @@ AgriAlignNER-Disease7000-Refined/
 The released files include:
 
 - `code/AgriAlignNER/`: implementation of the AgriAlignNER model, training pipeline, and utility functions.
-- `code/baselines/AgriFuseNER/`: author reimplementation of AgriFuseNER* used for the controlled comparison in the revised manuscript. This is not the official implementation released by the original AgriFuseNER authors.
+- `code/baseline/AgriFuseNER/`: author reimplementation of AgriFuseNER* used for the controlled comparison in the revised manuscript. This is not the official implementation released by the original AgriFuseNER authors.
 - `configs/`: training configurations for AgriAlignNER and compared baseline models.
 - `reconstruct_refined_dataset.py`: reconstructs the fixed Disease7000-Refined dataset version from an authorized copy of the original dataset.
 - `manifests/retained_sample_ids.txt`: contains identifiers of all 6,298 retained samples.
