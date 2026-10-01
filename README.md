@@ -65,7 +65,7 @@ AgriAlignNER-Disease7000-Refined/
 │   │   └── AgriAlignNER.yaml
 │   │
 │   └── baselines/
-│       ├── AgriFuseNER*.yaml
+│       ├── AgriFuseNER.yaml
 │       ├── AMLR.yaml
 │       ├── BERT.yaml
 │       ├── BERT-CRF.yaml
