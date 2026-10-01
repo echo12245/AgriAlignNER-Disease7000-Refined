@@ -4,7 +4,7 @@ import torch
 from PIL import Image
 from tqdm import tqdm
 from transformers import AutoImageProcessor, AutoModel
-from processor.dataset import parse_imgid_bio_file
+from ..processor.dataset import parse_imgid_bio_file
 def find_image(root, imgid):
     root = Path(root)
     stem = Path(imgid).stem
