@@ -23,37 +23,28 @@ from utils.visual import extract_split_features
 DATA_DIR = Path("data/Disease7000-Refined")
 IMAGE_DIR = Path("data/Disease7000-Refined_images")
 AUX_ROOT = Path("data/Disease7000-Refined_aux_images")
-
-
-BERT_MODEL_NAME = "bert-base-uncased"
+BERT_MODEL_NAME = "bert-base-cased"
 VIT_MODEL_NAME = "google/vit-base-patch16-224"
-
 TRAIN_FILE = DATA_DIR / "train.txt"
 DEV_FILE = DATA_DIR / "valid.txt"
 TEST_FILE = DATA_DIR / "test.txt"
-
 TRAIN_AUX_DICT = DATA_DIR / "Disease7000-Refined_train_dict.pth"
 DEV_AUX_DICT = DATA_DIR / "Disease7000-Refined_val_dict.pth"
 TEST_AUX_DICT = DATA_DIR / "Disease7000-Refined_test_dict.pth"
-
 TRAIN_CROP_DIR = AUX_ROOT / "train" / "crops"
 DEV_CROP_DIR = AUX_ROOT / "val" / "crops"
 TEST_CROP_DIR = AUX_ROOT / "test" / "crops"
-
 EXPECTED_COUNTS = {"train": 5038, "dev": 629, "test": 631}
-
 PAPER_EPOCHS = 120
 PAPER_BATCH_SIZE = 32
 PAPER_LR = 3e-6
 PAPER_DROPOUT = 0.1
-
 def seed_all(seed):
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
-
 def resolve_paths(args):
     data_dir = Path(args.data_dir)
     aux_root = Path(args.aux_root)
