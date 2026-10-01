@@ -103,8 +103,6 @@ The feature files are generated locally and are not included in the repository.
 
 ## Running the Code
 
-All commands below should be executed from the `AgriFuseNER/` directory.
-
 ### 1. Validate the Dataset
 
 Before feature extraction and training, verify the dataset and fixed split sizes:
