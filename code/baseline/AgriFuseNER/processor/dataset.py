@@ -13,7 +13,6 @@ def build_label_vocab(entity_types=ENTITY_TYPES):
     id2label = {i: label for label, i in label2id.items()}
     return label2id, id2label
 def parse_imgid_bio_file(path):
-    """Parse Disease7000-Refined: IMGID line + token<TAB>BIO-label blocks."""
     path = Path(path)
     samples, imgid, tokens, labels = [], None, [], []
     def flush():
@@ -84,7 +83,6 @@ class Disease7000RefinedDataset(Dataset):
             if wid is None:
                 continue
             label = row["labels"][wid]
-            # Extra subtokens after the first inherit I-type rather than B-type.
             if wid == previous_word and label.startswith("B-"):
                 label = "I-" + label[2:]
             if label not in self.label2id:
