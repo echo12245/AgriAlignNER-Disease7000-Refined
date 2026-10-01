@@ -3,7 +3,6 @@ from pathlib import Path
 from typing import Any
 import torch
 from torch.utils.data import Dataset
-
 ENTITY_TYPES = ["Crop", "Disease", "Feature", "Position"]
 def build_label_vocab(entity_types=ENTITY_TYPES):
     labels = ["O"]
