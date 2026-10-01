@@ -1,5 +1,5 @@
 model:
-  name: AgriFuseNER*
+  name: AgriFuseNER
 
 
 architecture:
