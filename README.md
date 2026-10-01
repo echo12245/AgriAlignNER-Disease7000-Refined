@@ -35,7 +35,7 @@ AgriAlignNER-Disease7000-Refined/
 │   │   ├── requirements.txt
 │   │   └── run_agriAlign.py
 │   │
-│   └── baselines/
+│   └── baseline/
 │       └── AgriFuseNER/
 │           ├── models/
 │           │   ├── __init__.py
