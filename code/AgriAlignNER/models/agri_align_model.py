@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from torchcrf import CRF
 from transformers import BertModel
 from transformers.modeling_outputs import TokenClassifierOutput
-from utils.encoder import RegionLevelVisualEncoder
+from ..utils.encoder import RegionLevelVisualEncoder
 import math
 
 class EntityLevelDynamicGatedAlignment(nn.Module):
