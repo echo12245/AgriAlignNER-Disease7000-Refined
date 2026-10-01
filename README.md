@@ -17,46 +17,44 @@ The repository contains the source code, configuration files, and reproducibilit
 ```
 AgriAlignNER-Disease7000-Refined/
 │
-├── code/
-│   ├── AgriAlignNER/
-│   │   ├── models/
-│   │   │   ├── __init__.py
-│   │   │   └── agri_align_model.py
-│   │   │
-│   │   ├── modules/
-│   │   │   ├── __init__.py
-│   │   │   └── agri_align_trainer.py
-│   │   │
-│   │   ├── utils/
-│   │   │   ├── __init__.py
-│   │   │   └── encoder.py
-│   │   │
-│   │   ├── README.md
-│   │   ├── requirements.txt
-│   │   └── run_agriAlign.py
+├── AgriAlignNER/
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── agri_align_model.py
 │   │
-│   └── baseline/
-│       └── AgriFuseNER/
-│           ├── models/
-│           │   ├── __init__.py
-│           │   └── agrifusener.py
-│           │
-│           ├── modules/
-│           │   ├── __init__.py
-│           │   └── crf.py
-│           │
-│           ├── processor/
-│           │   ├── __init__.py
-│           │   └── dataset.py
-│           │
-│           ├── utils/
-│           │   ├── __init__.py
-│           │   ├── evaluate.py
-│           │   └── visual.py
-│           │
-│           ├── README.md
-│           ├── requirements.txt
-│           └── run_agrifusener.py
+│   ├── modules/
+│   │   ├── __init__.py
+│   │   └── agri_align_trainer.py
+│   │
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── encoder.py
+│   │
+│   ├── README.md
+│   ├── requirements.txt
+│   └── run_agriAlign.py
+│
+├── AgriFuseNER*/
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── agrifusener.py
+│   │
+│   ├── modules/
+│   │   ├── __init__.py
+│   │   └── crf.py
+│   │
+│   ├── processor/
+│   │   ├── __init__.py
+│   │   └── dataset.py
+│   │
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── evaluate.py
+│   │   └── visual.py
+│   │
+│   ├── README.md
+│   ├── requirements.txt
+│   └── run_agrifusener.py
 │
 ├── configs/
 │   ├── common.yaml
@@ -93,7 +91,7 @@ AgriAlignNER-Disease7000-Refined/
 The released files include:
 
 - `AgriAlignNER/`: implementation of the AgriAlignNER model, training pipeline, and utility functions.
-- `AgriFuseNER/`: author reimplementation of AgriFuseNER* used for the controlled comparison in the revised manuscript. This is not the official implementation released by the original AgriFuseNER authors.
+- `AgriFuseNER*/`: author reimplementation of AgriFuseNER* used for the controlled comparison in the revised manuscript. This is not the official implementation released by the original AgriFuseNER authors.
 - `configs/`: training configurations for AgriAlignNER and compared baseline models.
 - `reconstruct_refined_dataset.py`: reconstructs the fixed Disease7000-Refined dataset version from an authorized copy of the original dataset.
 - `manifests/retained_sample_ids.txt`: contains identifiers of all 6,298 retained samples.
