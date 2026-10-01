@@ -1,5 +1,5 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23076137.svg)](https://doi.org/10.5281/zenodo.23076137)
-# AgriAlignNER-Disease7000-Refined
+# AgriAlignNER-Disease7000-Refined v1.0.1
 Reproducibility resources for AgriAlignNER, including model code, the AgriFuseNER reimplementation, baseline configurations, Disease7000-Refined reconstruction scripts, retained-sample identifiers, and fixed train/validation/test splits.
 
 
